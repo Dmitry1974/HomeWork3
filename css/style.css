@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/2211-webfont.woff2') format('woff2'),
+    url('../fonts/2211-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    background-color: grey;
+    font-family: 'open_sansregular', sans-serif;
+}
+.wrapper {
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 50px;
+}
+.cont {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+}
+.main {
+    display: block;
+        /*height: 40px;*/
+    margin: 0 auto 30px;
+    /*padding-top: 15px;*/
+    padding-left: 15px;
+    background-color: #515151;
+}
+.main ul {
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+.main li {
+    float: left;
+}
+.main a {
+    display: block;
+    padding-left: 15px;
+    padding: 1em;
+    padding-right: 15px;
+    background: #515151;
+    /*border-left: 1px solid #b19891;*/
+    color: #ffffff;
+}
+.main a
+{
+    border-left: 1px solid #515151;
+    border-right: 1px solid #515151;
+}
+
+.main li.active a{
+    background: #000000;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+.main a:hover {
+    background: #000000;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+.content {
+    width: 966px; margin: auto;
+    height: 600px;
+    position: relative; /* Относительное позиционирование */
+}
+.left_menu, .description { position: absolute; }
+.sidebar {
+    background: #C6DD7D; /* Цвет фона */
+    width: 240px; /* Ширина колонки */
+}
+.description {
+    background: #ffffff; /* Цвет фона */
+    margin-left: 300px; /* Сдвиг вправо */
+    width: 700px; /* Ширина колонки */
+    font-size: 10pt;
+    text-align: justify;
+}
+.left_menu ul {
+    /*overflow: hidden;*/
+    margin-left: -35px;
+    width: 250px;
+
+}
+
+.left_menu a {
+    display: block;
+    padding: 10px;
+    padding-right: 45px;
+    padding-left: 30px;
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
+    color: #000000;
+}
+.left_menu a:hover, .left_menu li.active a {
+    background: #f9f9f9;
+    padding-left: 60px;
+}
+.image_baik {
+    border: 1px solid #c8c8c8;
+    text-align: center;
+}
+
+.foot {
+    display: block;
+    /*width: 968px;*/
+    height: 40px;
+    margin: 0 auto 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+        background-color: #e1e1e1;
+}
+.foot ul {
+    overflow: hidden;
+}
+.foot li {
+    float: left;
+}
+.foot a {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: #e1e1e1;
+    /*border-left: 1px solid #b19891;*/
+    color: #000000;
+}
+.foot li:first-child a
+{
+    margin-left: 15px;
+}
+.foot li:last-child {
+    float: right;
+    margin-right: 30px;
+    font-size: 10pt;
+}
+.footer-nav li a:hover, .footer-nav li.active a{
+    border-bottom:1px solid;
+}
