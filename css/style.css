@@ -6,19 +6,35 @@
     font-style: normal;
 
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: grey;
+    background-color: #ffffff;
     font-family: 'open_sansregular', sans-serif;
+
+}
+header h1 {
+    font-size: 3em;
 }
 .wrapper {
+    margin: 0 auto;
+    width: 1060px;
     background-color: white;
-    margin-left: 100px;
+    /*margin-left: 100px;
     margin-right: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 50px;*/
+
 }
 .cont {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 46px;
+    padding-right: 47px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-top: 38px;
+    padding-bottom: 30px;
+   /* margin-left: 50px;
+    margin-right: 50px;*/
 }
 
 ul {
@@ -48,49 +64,55 @@ a {
 }
 .main a {
     display: block;
-    padding-left: 15px;
-    padding: 1em;
-    padding-right: 15px;
+    /*padding: 1em 15px 1em 1em;*/
+    padding: 7px 69px 15px 18px;
     background: #515151;
     /*border-left: 1px solid #b19891;*/
     color: #ffffff;
 }
 .main a
 {
-    border-left: 1px solid #515151;
-    border-right: 1px solid #515151;
+    /*border-left: 1px solid #515151;
+    border-right: 1px solid #515151;*/
 }
 
-.main li.active a{
+/*.main li.active a{
     background: #000000;
     border-left: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
-}
+}*/
 .main a:hover {
     background: #000000;
     border-left: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
+    transition: .5s;
 }
 .content {
     width: 966px; margin: auto;
     height: 600px;
     position: relative; /* Относительное позиционирование */
 }
-.left_menu, .description { position: absolute; }
-.sidebar {
-    background: #C6DD7D; /* Цвет фона */
-    width: 240px; /* Ширина колонки */
+.left_menu {
+    display: inline-block;
+    vertical-align: top;
 }
 .description {
+    display: inline-block;
     background: #ffffff; /* Цвет фона */
-    margin-left: 300px; /* Сдвиг вправо */
-    width: 700px; /* Ширина колонки */
+    width: 661px; /* Ширина колонки */
     font-size: 10pt;
     text-align: justify;
+    margin-left: 50px;
+}
+.image_baik img {
+    margin-top: 72px;
+}
+.description p {
+    margin-top: 40px;
 }
 .left_menu ul {
     /*overflow: hidden;*/
-    margin-left: -35px;
+    /*margin-left: -35px;*/
     width: 250px;
 
 }
@@ -104,9 +126,10 @@ a {
     border: 1px solid #c8c8c8;
     color: #000000;
 }
-.left_menu a:hover, .left_menu li.active a {
+.left_menu a:hover {
     background: #f9f9f9;
     padding-left: 60px;
+    transition: .2s;
 }
 .image_baik {
     border: 1px solid #c8c8c8;
@@ -145,6 +168,7 @@ a {
     margin-right: 30px;
     font-size: 10pt;
 }
-.footer-nav li a:hover, .footer-nav li.active a{
+.footer-nav li a:hover {
     border-bottom:1px solid;
+    transition: .2s;
 }
