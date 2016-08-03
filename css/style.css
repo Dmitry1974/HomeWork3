@@ -52,7 +52,12 @@ a {
     margin: 0 auto 30px;
     /*padding-top: 15px;*/
     padding-left: 15px;
-    background-color: #515151;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(bottom, #444343, #5e5e5e);
+    background-image: -moz-linear-gradient(bottom, #444343, #5e5e5e);
+    background-image: -o-linear-gradient(bottom, #444343, #5e5e5e);
+    background-image: -ms-linear-gradient(bottom, #444343, #5e5e5e);
+    background-image: linear-gradient(to top, #444343, #5e5e5e);
 }
 .main ul {
     overflow: hidden;
@@ -72,8 +77,9 @@ a {
 }
 .main a
 {
-    /*border-left: 1px solid #515151;
-    border-right: 1px solid #515151;*/
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
+   /* border-image: linear-gradient(to top, #444343, #5e5e5e);*/
 }
 
 /*.main li.active a{
@@ -83,8 +89,8 @@ a {
 }*/
 .main a:hover {
     background: #000000;
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     transition: .5s;
 }
 .content {
@@ -123,8 +129,13 @@ a {
     padding-right: 45px;
     padding-left: 30px;
     background: #ffffff;
-    border: 1px solid #c8c8c8;
+    border-top: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
     color: #000000;
+}
+.left_menu li:last-child {
+    border-bottom: 1px solid #c8c8c8;
 }
 .left_menu a:hover {
     background: #f9f9f9;
